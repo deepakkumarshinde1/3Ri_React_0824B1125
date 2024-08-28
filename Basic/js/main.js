@@ -123,7 +123,47 @@ let searchResult = array.filter(function (value, index) {
   return value === search;
 });
 
-console.log(searchResult);
+// console.log(searchResult);
+let array3 = [10, 20, 30, 40];
+clear(array3);
 // re-create map()
+let newArray = array3.map(function (value, index) {
+  return `<tr><td>${value * value}</td></tr>`;
+});
+
 // revers revers()
+newArray = newArray.reverse();
 // array to string join()
+let tableRow = newArray.join("");
+console.log(tableRow);
+clear();
+
+//############################### JS Object ##########################
+let product = {
+  name: "Dell",
+  qty: 2000,
+  price: 40000,
+  discount: 4000,
+};
+
+//############################### JS Object with array ##########################
+// list [{}, {}, {}, {}, {}]
+let productList = [
+  { name: "Dell", price: "40k" },
+  { name: "Lenovo", price: "55K" },
+  { name: "Mac", price: "80K" },
+]; // JSON , JSON array
+// JSON -> Javascript Object Notations
+console.log(productList);
+
+//################################ Node JS (Basic) ########################################
+// 2009 --> V8 Engine + C++ ( Node JS )
+// Run a code of javascript without browser
+// Node JS is runtime environment for javascript
+// Helps to create front , mobile , desktop and server application
+// Server + Environment
+
+// Backend --> Express JS , NestJS
+// Mobile -> React Native , Angular Native , IONIC
+// Front End -> React , Angular , Veu, Nest JS ( React JS )
+// Desktop --> Electron JS ( React , ANGULAR , HTML, CSS , JS)
