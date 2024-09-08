@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useCountContext } from "../context/counter.context";
 
 function Input() {
-  let [count, setCount] = useState(0); // number , string , boolean, [], {}
-  let getValue = () => {
-    setCount(count + 1);
+  let { saveNewTask } = useCountContext();
+
+  let [inputValue, setInputValue] = useState("");
+  let changeInput = (event) => {
+    setInputValue(event.target.value);
   };
+
   return (
     <>
       <section className="row">
@@ -14,15 +18,18 @@ function Input() {
               type="text"
               className="form-control rounded-0"
               placeholder="Enter Todo"
-              value={count}
+              value={inputValue}
+              onChange={changeInput}
             />
             <button
-              onClick={getValue}
+              onClick={() => {
+                saveNewTask(inputValue);
+                setInputValue("");
+              }}
               className="input-group-text btn btn-success rounded-0"
             >
               <em className="fa fa-floppy-o"></em> Save
             </button>
-            <span className="ms-3">{count}</span>
           </section>
         </section>
       </section>

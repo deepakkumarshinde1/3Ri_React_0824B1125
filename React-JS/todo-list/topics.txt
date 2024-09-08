@@ -1,0 +1,15 @@
+React Basic
+Components
+Comp to Comp Communication
+State
+Props
+Loop Rendering 
+------
+If Else --> ternary operator (cond) ? trueValue : falseValue
+JSON array
+
+Flux Architecture
+    Context API
+        Context 
+        Provider
+        useContext
