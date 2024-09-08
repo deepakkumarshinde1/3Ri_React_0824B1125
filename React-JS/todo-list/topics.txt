@@ -13,3 +13,26 @@ Flux Architecture
         Context 
         Provider
         useContext
+------
+    React Life Cycle
+    services
+    useReducer
+    memo (Pure Component)
+    HOC (higher order component)
+
+----
+    routings
+    protected routings  
+    useMemo
+    useCallback
+    web Vitals 
+    testing (react testing library)   
+
+---
+    Redux Architecture
+    Redux Saga
+
+---
+    Deployment
+---
+    Interview Question
