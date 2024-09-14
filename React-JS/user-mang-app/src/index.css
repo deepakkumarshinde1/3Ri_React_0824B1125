@@ -1,0 +1,15 @@
+.bg-back {
+  background-image: url(https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bg-back .card {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: 1px solid white !important;
+
+  padding: 3rem !important;
+  width: 40vw;
+  box-shadow: 0 0 10px 0 white;
+}

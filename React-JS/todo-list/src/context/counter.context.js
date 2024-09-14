@@ -3,6 +3,11 @@ import { createContext, useContext, useState } from "react";
 // create Context
 let CountContext = createContext({});
 
+// hook -> Custom Hook
+export function useCountContext() {
+  return useContext(CountContext);
+}
+
 // Provider (Component)
 export function CounterContextProvider(props) {
   let { children } = props;
@@ -34,9 +39,4 @@ export function CounterContextProvider(props) {
       {children}
     </CountContext.Provider>
   );
-}
-
-// hook -> Custom Hook
-export function useCountContext() {
-  return useContext(CountContext);
 }
