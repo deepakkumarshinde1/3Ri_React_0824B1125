@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  let navigate = useNavigate();
   return (
     <>
       <section className="row" style={{ height: "100vh" }}>
@@ -41,6 +42,7 @@ function Login() {
                 <button
                   className="btn btn-success px-5 me-2 rounded-0"
                   type="button"
+                  onClick={() => navigate("/")}
                 >
                   <i className="fa fa-save me-2"></i>
                   Save

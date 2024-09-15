@@ -13,3 +13,23 @@
   width: 40vw;
   box-shadow: 0 0 10px 0 white;
 }
+
+.active {
+  color: red !important;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin-top: 32px;
+}
+.pages button {
+  background-color: transparent;
+  width: 32px;
+}
+.pages button:hover {
+  background-color: blueviolet;
+  color: white;
+}
