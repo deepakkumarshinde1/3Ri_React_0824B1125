@@ -146,7 +146,7 @@ function Registration() {
               <div>
                 <p className="m-0 text-white text-center h5 mt-2">
                   Have account ?{" "}
-                  <Link to="/login" className="text-white-50">
+                  <Link to="/loginb" className="text-white-50">
                     Sign In
                   </Link>
                 </p>
