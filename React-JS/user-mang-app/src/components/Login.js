@@ -11,13 +11,13 @@ function Login() {
         >
           <section className="card rounded-0">
             <h3 className="h4 mb-3 text-center text-white">
-              <i class="fa fa-users" aria-hidden="true"></i> User Login{" "}
-              <i class="fa fa-users" aria-hidden="true"></i>
+              <i className="fa fa-users" aria-hidden="true"></i> User Login{" "}
+              <i className="fa fa-users" aria-hidden="true"></i>
             </h3>
             <form action="">
               <div className="input-group mb-3">
                 <span className="input-group-text bg-warning rounded-0">
-                  <i class="fa fa-user-secret fa-2x" aria-hidden="true"></i>
+                  <i className="fa fa-user-secret fa-2x" aria-hidden="true"></i>
                 </span>
                 <input
                   type="text"
@@ -28,7 +28,7 @@ function Login() {
               <div className="input-group mb-3 ">
                 <span className="input-group-text px-3 bg-info rounded-0">
                   <i
-                    class="fa fa-unlock-alt fa-2x text-white"
+                    className="fa fa-unlock-alt fa-2x text-white"
                     aria-hidden="true"
                   ></i>
                 </span>

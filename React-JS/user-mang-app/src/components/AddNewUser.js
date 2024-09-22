@@ -86,7 +86,7 @@ function AddNewUser() {
                   />
                 </div>
                 <span className="input-group-text rounded-0 bg-white text-success">
-                  <i class="fa fa-male me-1" aria-hidden="true"></i>
+                  <i className="fa fa-male me-1" aria-hidden="true"></i>
                   Male
                 </span>
                 <div className="input-group-text rounded-0">
@@ -99,7 +99,7 @@ function AddNewUser() {
                   />
                 </div>
                 <span className="input-group-text bg-white text-success rounded-0">
-                  <i class="fa fa-female me-1" aria-hidden="true"></i>
+                  <i className="fa fa-female me-1" aria-hidden="true"></i>
                   Female
                 </span>
                 <div className="input-group-text rounded-0">
@@ -112,7 +112,10 @@ function AddNewUser() {
                   />
                 </div>
                 <span className="input-group-text text-success bg-white rounded-0">
-                  <i class="fa fa-question-circle me-1" aria-hidden="true"></i>
+                  <i
+                    className="fa fa-question-circle me-1"
+                    aria-hidden="true"
+                  ></i>
                   Other
                 </span>
               </div>

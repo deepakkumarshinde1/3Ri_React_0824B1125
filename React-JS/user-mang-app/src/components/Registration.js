@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useAdminContext } from "../context/admin.context";
 
 function Registration() {
+  let { newUserDetails, handelInput, saveRecord } = useAdminContext();
   return (
     <>
       <section className="row" style={{ height: "100vh" }}>
@@ -22,6 +24,9 @@ function Registration() {
                   type="text"
                   className="form-control rounded-0"
                   placeholder="Enter User Name"
+                  value={newUserDetails.name}
+                  onChange={handelInput}
+                  name="name"
                 />
               </div>
               <div className="input-group mb-3">
@@ -35,6 +40,9 @@ function Registration() {
                   type="text"
                   className="form-control rounded-0"
                   placeholder="Enter Email"
+                  value={newUserDetails.email}
+                  onChange={handelInput}
+                  name="email"
                 />
               </div>
               <div className="input-group mb-3">
@@ -48,6 +56,9 @@ function Registration() {
                   type="text"
                   className="form-control rounded-0"
                   placeholder="Enter User Mobile"
+                  value={newUserDetails.mobile}
+                  onChange={handelInput}
+                  name="mobile"
                 />
               </div>
               <div className="input-group mb-3">
@@ -67,9 +78,12 @@ function Registration() {
                   type="text"
                   className="form-control rounded-0"
                   placeholder="Enter Password"
+                  value={newUserDetails.password}
+                  onChange={handelInput}
+                  name="password"
                 />
               </div>
-              <div className="input-group mb-3 ">
+              {/* <div className="input-group mb-3 ">
                 <span className="input-group-text bg-warning rounded-0">
                   <i className="fa fa-users me-2"></i>
                   Gender
@@ -84,7 +98,7 @@ function Registration() {
                   />
                 </div>
                 <span className="input-group-text rounded-0 bg-white text-success">
-                  <i class="fa fa-male me-1" aria-hidden="true"></i>
+                  <i className="fa fa-male me-1" aria-hidden="true"></i>
                   Male
                 </span>
                 <div className="input-group-text rounded-0">
@@ -97,7 +111,7 @@ function Registration() {
                   />
                 </div>
                 <span className="input-group-text bg-white text-success rounded-0">
-                  <i class="fa fa-female me-1" aria-hidden="true"></i>
+                  <i className="fa fa-female me-1" aria-hidden="true"></i>
                   Female
                 </span>
                 <div className="input-group-text rounded-0">
@@ -110,10 +124,13 @@ function Registration() {
                   />
                 </div>
                 <span className="input-group-text text-success bg-white rounded-0">
-                  <i class="fa fa-question-circle me-1" aria-hidden="true"></i>
+                  <i
+                    className="fa fa-question-circle me-1"
+                    aria-hidden="true"
+                  ></i>
                   Other
                 </span>
-              </div>
+              </div> */}
               <div className="input-group mb-3 ">
                 <span className="input-group-text px-3 bg-warning rounded-0">
                   <i
@@ -131,6 +148,7 @@ function Registration() {
                 <button
                   className="btn btn-success px-5 me-2 rounded-0"
                   type="button"
+                  onClick={saveRecord}
                 >
                   <i className="fa fa-save me-2"></i>
                   Save
