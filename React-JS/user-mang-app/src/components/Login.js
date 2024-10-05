@@ -1,7 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useAdminContext } from "../context/admin.context";
+import { useState } from "react";
 
 function Login() {
   let navigate = useNavigate();
+  let { userLogin, setUserLogin } = useAdminContext();
+  let [toggle, setToggle] = useState(false);
   return (
     <>
       <section className="row" style={{ height: "100vh" }}>
@@ -23,9 +27,13 @@ function Login() {
                   type="text"
                   className="form-control rounded-0"
                   placeholder="Enter User Name"
+                  value={userLogin.email}
+                  onChange={({ target }) => {
+                    setUserLogin({ ...userLogin, email: target.value });
+                  }}
                 />
               </div>
-              <div className="input-group mb-3 ">
+              <div className="input-group mb-2">
                 <span className="input-group-text px-3 bg-info rounded-0">
                   <i
                     className="fa fa-unlock-alt fa-2x text-white"
@@ -33,10 +41,32 @@ function Login() {
                   ></i>
                 </span>
                 <input
-                  type="text"
+                  type={toggle ? "text" : "password"}
                   className="form-control rounded-0"
                   placeholder="Enter Password"
+                  value={userLogin.password}
+                  onChange={({ target }) => {
+                    setUserLogin({ ...userLogin, password: target.value });
+                  }}
                 />
+              </div>
+              <div className="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  checked={toggle}
+                  value="-"
+                  id="checkbox"
+                  onChange={() => {
+                    setToggle(!toggle);
+                  }}
+                  className="form-check-input"
+                />
+                <label
+                  htmlFor="checkbox"
+                  className="form-check-label text-white"
+                >
+                  Show Password
+                </label>
               </div>
               <div className=" text-center">
                 <button

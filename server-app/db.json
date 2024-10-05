@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "173d",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "address": "Nashik",
+      "password": ""
+    },
+    {
+      "id": "066e",
+      "name": "Deepakkumar Shivaji Shinde",
+      "mobile": "+918007070845",
+      "email": "deepakkumar.shinde0@gmail.com",
+      "address": "Nashik",
+      "password": "admin@123"
+    },
+    {
+      "id": "e66f",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "address": "Nashik",
+      "password": ""
+    },
+    {
+      "id": "619e",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "address": "Nashik",
+      "password": ""
+    },
+    {
+      "id": "34e9",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "address": "Nashik",
+      "password": ""
+    },
+    {
+      "id": "c4c9",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "address": "Nashik",
+      "password": ""
+    }
+  ]
+}
