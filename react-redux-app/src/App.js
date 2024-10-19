@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import { increment } from "./redux/counter.reducer";
 import { useDispatch, useSelector } from "react-redux";
+import UserList from "./components/UserList";
 
 function App() {
   const dispatch = useDispatch();
@@ -14,6 +15,7 @@ function App() {
   return (
     <center>
       <button onClick={incCount}>INC {count}</button>
+      <UserList />
     </center>
   );
 }
