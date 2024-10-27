@@ -15,6 +15,22 @@
       "email": "deepakkumar.shinde0@gmail.com",
       "address": "Nashik",
       "password": "admin@123"
+    },
+    {
+      "id": "68fb",
+      "name": "Amol",
+      "mobile": "9897898978",
+      "email": "amol@gmail.com",
+      "address": "Nashik",
+      "password": "admin@123"
+    },
+    {
+      "id": "29ba",
+      "name": "Suraj Tikhe",
+      "mobile": "890987656544",
+      "email": "suraj@gmail.com",
+      "address": "Nashik",
+      "password": "1234"
     }
   ]
 }
