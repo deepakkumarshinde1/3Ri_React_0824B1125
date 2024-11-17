@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { appendNumber } from "./hoc/number.hoc";
 
 function ChildComp({ randomNumber, count1, inc1 }) {
   console.log("ChildComp");
@@ -10,7 +11,8 @@ function ChildComp({ randomNumber, count1, inc1 }) {
   );
 }
 
-export default memo(ChildComp);
+// export default memo(ChildComp);
+export default memo(appendNumber(ChildComp));
 
 // Pure Comp => will re-render on on state or props will get change
 // HOC => memo
